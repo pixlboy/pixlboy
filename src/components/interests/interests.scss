@@ -1,0 +1,35 @@
+.interests {
+  padding: 20px;
+  
+  .list {
+    width: 100%;
+    margin: 25px auto 0;
+    overflow: hidden;
+
+    li {
+      width: 33%;
+      float: left;
+      text-align: center;
+      padding: 1rem 0;
+
+      &:hover {
+        .icons {
+          color: var(--color-blue-2);
+        }
+      }
+
+      .name {
+        display: block;
+        font-size: 0.7rem;
+        line-height: 20px;
+      }
+
+      .icons {
+        transition: 0.7s;
+        font-size: 2rem;
+        display: block;
+        font-style: normal;
+      }
+    }
+  }
+}

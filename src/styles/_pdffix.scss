@@ -1,0 +1,25 @@
+/*--------------------- PDF fixes -------------------------------*/
+
+.wrapper {
+    width: var(--width-wrapper);
+    .anim-frame {
+        .cloud {
+            animation-name: none;
+            &.small {
+                margin: 0 -50px 0 0;
+                height: 100%;
+            }
+            &.smaller {
+                margin: -20px 215px 0 0;
+                height: 100%;
+            }
+        }
+    }
+    .windmill{
+        .windmill-wings{
+            &.wing1, &.wing2{
+                animation-name: none;
+            }
+        }
+    }
+}

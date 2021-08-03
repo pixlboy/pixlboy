@@ -1,0 +1,34 @@
+.personal {
+  padding: 10px 0;
+
+  .list {
+    li {
+      padding: 8px 20px;
+      overflow: hidden;
+
+      label {
+        width: 40px;
+      }
+
+      &:nth-child(1) {
+        background: var(--color-grey-5);
+      }
+
+      &:nth-child(2) {
+        background: var(--color-grey-6);
+      }
+
+      &:nth-child(3) {
+        background: var(--color-grey-7);
+      }
+
+      &:nth-child(4) {
+        background: var(--color-grey-8);
+      }
+
+      span {
+        line-height: 1.8rem;
+      }
+    }
+  }
+}

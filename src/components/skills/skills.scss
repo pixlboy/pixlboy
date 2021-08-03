@@ -1,0 +1,58 @@
+.section-skills {
+    .skill-stats{
+        margin-bottom: 20px;
+        border-radius: 3px;
+        font-size: 0.7rem;
+        text-align: center;
+        color: var(--color-white);
+        overflow: hidden;
+        width: 100%;
+        .skill-bar{
+            height: 18px;
+            line-height: 19px;
+            float: left;
+        }
+        .javascript-skill{
+            width:60%;
+        }
+        .html-skill{
+            width:15%;
+        }
+        .css-skill{
+            width:15%;
+        }
+        .other-skill{
+            width:10%;
+        }
+    }
+    .skill-list{
+        margin: 0 0 20px;
+        > li{
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        ol{
+            float: left;
+            padding: 0;
+        }
+        strong{
+            width: 200px;
+            text-transform: capitalize;
+            float: left;
+            font-weight: 700;
+        }
+        .item{
+            float: left;
+            &:after{
+                content: "|";
+                margin: 0 6px;
+                font-weight: 700;
+            }
+            &:last-of-type{
+                &:after{
+                    content: ""
+                }
+            }
+        }
+    }
+}

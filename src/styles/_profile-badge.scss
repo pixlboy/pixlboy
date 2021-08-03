@@ -1,0 +1,54 @@
+.profile-badge {
+  position: relative;
+  padding: 0 0 10px;
+
+  .cover-image {
+    height: 395px;
+    background: url("../images/profile-img-bw.jpg") no-repeat 0 0;
+    background-size: 100%;
+  }
+
+  .profile-image {
+    transition: 0.7s;
+    background: url("../images/profile-img-bw.jpg") no-repeat 0 0;
+    background-size: 100%;
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    position: absolute;
+    top: 65px;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 3px solid var(--color-grey-1);
+
+    &:before {
+      content: "";
+      background-image: url("../images/profile-img.jpg");
+    }
+
+    &:hover {
+      background-image: url("../images/profile-img.jpg");
+    }
+  }
+
+  .name {
+    font-size: 1.6rem;
+    margin: 90px 0 10px;
+    text-align: center;
+    color: var(--color-white);
+
+    &.letter {
+      margin: 10px 0 10px;
+    }
+  }
+
+  .title {
+    font-size: 1.3rem;
+    margin: 0 0 10px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--color-white);
+  }
+}

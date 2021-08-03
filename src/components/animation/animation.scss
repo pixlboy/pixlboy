@@ -1,0 +1,146 @@
+.anim-frame {
+  background: linear-gradient(var(--color-blue-7), var(--color-blue-8));
+  position: relative;
+  height: 135px;
+
+  .clouds {
+    position: absolute;
+    width: 100%;
+    height: 135px;
+    overflow: hidden;
+  }
+
+  .cloud {
+    animation-name: cloud-movement;
+    animation-timing-function: linear;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    right: 0;
+    opacity: 0.5;
+
+    &.small {
+      margin: 0 60px 0 0;
+      width: 150px;
+      height: auto;
+    }
+
+    &.smaller {
+      margin: 0 230px 0 0;
+      width: 100px;
+      height: auto;
+    }
+
+    &.slow {
+      animation-duration: 8s;
+    }
+
+    &.slower {
+      animation-duration: 12s;
+    }
+  }
+  .windmill {
+    height: 135px;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+
+    .windmill-base {
+      border-bottom: 10px solid var(--color-grey-1);
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      height: 0;
+      width: 20px;
+      left: 40px;
+      bottom: -2px;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+      position: absolute;
+    }
+
+    .windmill-body {
+      z-index: 0;
+      width: 8px;
+      height: 65px;
+      background: var(--color-grey-1);
+      border-radius: 5px / 70px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      left: 46px;
+      bottom: 0;
+      position: absolute;
+    }
+
+    .windmill-wings {
+      width: 5px;
+      height: 75px;
+      background: var(--color-grey-1);
+      border-radius: 4px / 60px;
+      left: 47px;
+      top: 34px;
+      position: absolute;
+
+      &.wing1 {
+        transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        animation-name: rotate1;
+      }
+
+      &.wing2 {
+        transform: rotate(120deg);
+        -webkit-transform: rotate(120deg);
+        animation-name: rotate2;
+      }
+
+      &.wing1,
+      &.wing2 {
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+      }
+    }
+  }
+}
+
+@keyframes cloud-movement {
+  0% {
+    opacity: 0.3;
+    transform: translateX(300px);
+  }
+
+  10% {
+    opacity: 0.7;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotate(390deg);
+  }
+
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotate(480deg);
+  }
+
+  to {
+    transform: rotate(120deg);
+  }
+}

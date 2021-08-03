@@ -1,0 +1,19 @@
+.app-header {
+    height: var(--header-footer-height);
+    background: var(--color-grey-3);
+    color: var(--color-white);
+    .tab{
+        border-bottom: 4px solid var(--color-blue-3);
+        text-transform: uppercase;
+        height: var(--header-footer-height);
+        line-height: 58px;
+        font-size: 1.1rem;
+        margin: auto;
+        display: block;
+        width: 80px;
+        text-align: center;
+        &.cover{
+            width: 140px;
+        }
+    }
+}

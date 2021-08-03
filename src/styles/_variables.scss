@@ -1,0 +1,47 @@
+:root {
+  //SASS variables
+  --font-stack: "Exo", sans-serif;
+
+  //White
+  --color-white: #fff; //basic white
+  --color-black: #000;
+
+  //Blue
+  --color-blue-1: #01579b;
+  --color-blue-2: #0277bd;
+  --color-blue-3: #0288d1;
+  --color-blue-4: #039be5;
+  --color-blue-5: #03a9f4;
+  --color-blue-6: #29b6f6;
+  --color-blue-7: #0077b8;
+  --color-blue-8: #36b9ff;
+
+  //Grey
+  --color-grey-1: #313131;
+  --color-grey-2: #adadad;
+  --color-grey-3: #1f1f1f;
+  --color-grey-4: #b7b7b7;
+  --color-grey-5: #414141;
+  --color-grey-6: #515151;
+  --color-grey-7: #616161;
+  --color-grey-8: #717171;
+  --color-grey-9: #d6d6d6;
+  --color-grey-10: #f2f2f2;
+
+  //Red
+  --color-red-1: #ee3b33;
+
+  //Orange
+  --color-orange-1: #ff7900;
+
+  //Green
+  --color-green-1: #00be3b;
+
+  //Yellow
+  --color-yellow-1: #ffef00;
+
+  --width-wrapper: 1280px;
+  --header-footer-height: 50px;
+  --body-height: 1722px;
+  --width-left: 400px;
+}
