@@ -14,6 +14,7 @@
     "build": "react-scripts build",
     "build:lin": "GENERATE_SOURCEMAP=false react-scripts build",
     "build:win": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
+    "deploy": "firebase deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "print:resume": "cd wkhtmltopdf/bin && wkhtmltopdf --margin-left 0 --margin-right 0 --margin-top 0 --margin-bottom 0 https://pixlboy.web.app rachit-garg-resume.pdf",

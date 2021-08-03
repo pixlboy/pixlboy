@@ -10,9 +10,10 @@
 
 # production
 /build
-/wkhtmltopdf
+wkhtmltopdf
 
 # misc
+.firebase
 .env
 .DS_Store
 .env.local
