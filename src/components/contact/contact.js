@@ -1,5 +1,5 @@
 import "./contact.scss";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { firestore } from "../../firebase/connect";
 
 export default function Contact() {

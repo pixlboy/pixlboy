@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "firebase": "^8.8.1",
+    "jspdf": "^2.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
@@ -17,7 +18,7 @@
     "deploy": "firebase deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "print:resume": "cd wkhtmltopdf/bin && wkhtmltopdf --margin-left 0 --margin-right 0 --margin-top 0 --margin-bottom 0 https://pixlboy.web.app rachit-garg-resume.pdf",
+    "print:resume": "cd wkhtmltopdf/bin && wkhtmltopdf --margin-left 0 --margin-right 0 --margin-top 0 --margin-bottom 0 ./xyz.html rachit-garg-resume.pdf",
     "print:cover": "cd wkhtmltopdf/bin && wkhtmltopdf --margin-left 0 --margin-right 0 --margin-top 0 --margin-bottom 0 https://pixlboy.web.app/cover rachit-garg-cover.pdf"
   },
   "eslintConfig": {
