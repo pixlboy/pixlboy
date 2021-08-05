@@ -13,6 +13,15 @@
                 background-color: var(--color-grey-2);
                 color: var(--color-white);
                 float: left;
+                background-size: 70%;
+                background-position: center;
+                background-repeat: no-repeat;
+                &.work{
+                    background-image: url("../../images/briefcase.svg");
+                }
+                &.edu{
+                    background-image: url("../../images/hat.svg");
+                }
             }
 
             .summary {

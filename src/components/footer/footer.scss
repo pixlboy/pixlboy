@@ -1,8 +1,8 @@
 .app-footer {
-    height: 40px;
-    font-size: .850rem;
+    height: var(--header-footer-height);
     background: var(--color-grey-3);
     color: var(--color-white);
+    font-size: .850rem;
     z-index: 100;
     position: relative;
     .updated{
@@ -12,10 +12,9 @@
     }
     .hashtags{
         line-height: 40px;
-        margin: 0 70px;
-        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
         .hashtag{
-            color: var(--color-blue-3);
             font-size: .8rem;
             margin: 0 10px;
             font-weight: 700;

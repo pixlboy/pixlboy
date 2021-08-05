@@ -1,3 +1,4 @@
+import './responsibilities.scss';
 import { useState, useEffect } from "react";
 import { firestore } from "../../firebase/connect";
 
@@ -8,8 +9,7 @@ export default function Responsibilities() {
     const collection = firestore.collection("responsibilities").doc("list");
     collection.get().then((doc) => {
       setList(doc.data().data);
-    });    
-    console.log('here');
+    });
   }, []);
 
   return (
@@ -19,7 +19,9 @@ export default function Responsibilities() {
       </h2>
       <div className="section-content clear-all">
         <ul className="list">
-          {list.map((item, i) => <li key={i}>{item}</li>)}
+          {list.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
         </ul>
       </div>
     </section>

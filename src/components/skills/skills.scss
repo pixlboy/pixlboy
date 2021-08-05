@@ -8,21 +8,25 @@
         overflow: hidden;
         width: 100%;
         .skill-bar{
-            height: 18px;
-            line-height: 19px;
+            height: 20px;
+            line-height: 20px;
             float: left;
-        }
-        .javascript-skill{
-            width:60%;
-        }
-        .html-skill{
-            width:15%;
-        }
-        .css-skill{
-            width:15%;
-        }
-        .other-skill{
-            width:10%;
+            &.frontend{
+                width:50%;
+                background: var(--color-blue-1);
+            }
+            &.middleware{
+                width:15%;
+                background: var(--color-blue-3);
+            }
+            &.backend{
+                width:15%;
+                background: var(--color-blue-5);
+            }
+            &.others{
+                width:20%;
+                background: var(--color-grey-2);
+            }
         }
     }
     .skill-list{

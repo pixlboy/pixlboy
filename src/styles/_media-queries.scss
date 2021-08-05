@@ -83,19 +83,10 @@
     }
   }
   .app-footer {
-    height: 80px;
+    height: 80px !important;
+    margin-top: 20px;
     .updated {
-      margin: 0;
-      width: 100%;
-      text-align: center;
-    }
-    .hashtags {
-      text-align: center;
-      width: 100%;
-      margin: 0;
-      .hashtag {
-        margin: 0 3px;
-      }
+      width: 100% !important;
     }
   }
 }

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import './highlights.scss';
+import { useState, useEffect } from "react";
 import { firestore } from "../../firebase/connect";
 
 export default function Highlights() {

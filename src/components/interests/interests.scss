@@ -1,22 +1,14 @@
-.interests {
-  padding: 20px;
-  
+.section-interests {
+ 
   .list {
-    width: 100%;
-    margin: 25px auto 0;
-    overflow: hidden;
 
     li {
-      width: 33%;
+      width: 25%;
       float: left;
       text-align: center;
-      padding: 1rem 0;
+      margin: 10px;
+      max-width: 85px;
 
-      &:hover {
-        .icons {
-          color: var(--color-blue-2);
-        }
-      }
 
       .name {
         display: block;

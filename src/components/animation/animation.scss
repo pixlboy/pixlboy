@@ -1,4 +1,4 @@
-.anim-frame {
+.section-animation {
   background: linear-gradient(var(--color-blue-7), var(--color-blue-8));
   position: relative;
   height: 135px;
@@ -42,6 +42,7 @@
       animation-duration: 12s;
     }
   }
+  
   .windmill {
     height: 135px;
     margin: 0 auto;

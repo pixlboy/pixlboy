@@ -44,7 +44,7 @@
     .section-header {
       color: var(--color-grey-3);
       font-size: 1em;
-      margin: 30px auto 10px;
+      margin: 30px auto 20px;
       height: 40px;
       letter-spacing: 2px;
       width: 70%;
@@ -81,11 +81,5 @@
       font-size: 0.9375em;
     }
 
-    .list {
-      li {
-        list-style-type: square;
-        margin: 10px 20px;
-      }
-    }
   }
 }

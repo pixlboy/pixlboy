@@ -1,20 +1,16 @@
 import "./intro.scss";
 
-export default function Intro(){
+export default function Intro({props}) {
+
   return (
     <section className="intro">
-      <p>
-        <strong>9</strong> years of experience in building Rich Internet
-        Applications.
-      </p>
-      <p>
-        Currently holding a role of an Associate Engineer in AQR Capital
-        Management, helping portfolio analytics team build their front-end
-        architecture.
-      </p>
-      <p>
-        A diligent & passionate person at work, gregarious & lively outside.
-      </p>
+      {props.list.map((item, i) => {
+        return (
+          <li key={i}>
+            <p>{item}</p>
+          </li>
+        );
+      })}
     </section>
   );
 }

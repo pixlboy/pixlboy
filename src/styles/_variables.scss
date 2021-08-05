@@ -1,6 +1,7 @@
 :root {
   //SASS variables
   --font-stack: "Exo", sans-serif;
+  --font-size: 16px;
 
   //White
   --color-white: #fff; //basic white
@@ -40,8 +41,8 @@
   //Yellow
   --color-yellow-1: #ffef00;
 
-  --width-wrapper: 1280px;
-  --header-footer-height: 50px;
-  --body-height: 1722px;
+  --width-wrapper: 1240px;
+  --header-footer-height: 40px;
+  --body-height: 1670px;
   --width-left: 400px;
 }

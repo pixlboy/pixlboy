@@ -26,16 +26,16 @@ export default function Skills() {
       </h2>
       <div className="section-content clear-all">
         <div className="skill-stats">
-          <span className="skill-bar javascript-skill" title="javascript">
-            JavaScript
+          <span className="skill-bar frontend" title="frontend">
+            Frontend
           </span>
-          <span className="skill-bar html-skill" title="html">
-            HTML
+          <span className="skill-bar middleware" title="middleware">
+            Middleware
           </span>
-          <span className="skill-bar css-skill" title="css">
-            CSS
+          <span className="skill-bar backend" title="backend">
+            Backend
           </span>
-          <span className="skill-bar other-skill" title="others">
+          <span className="skill-bar others" title="others">
             Others
           </span>
         </div>

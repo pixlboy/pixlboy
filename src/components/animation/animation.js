@@ -2,7 +2,7 @@ import "./animation.scss";
 
 export default function Animation() {
   return (
-    <section className="anim-frame logo" id="logo">
+    <section className="section-animation logo" id="logo">
       <div className="windmill">
         <div className="windmill-base"></div>
         <div className="windmill-body"></div>

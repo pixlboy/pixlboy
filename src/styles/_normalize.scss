@@ -1,15 +1,15 @@
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: var(--font-size);
+}
 body {
-  font-size: 17px;
   background-color: var(--color-grey-9);
   margin: 0;
   font: 100% var(--font-stack);
   color: var(--color-grey-1);
-  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -50,6 +50,7 @@ code {
 pre {
   white-space: pre-wrap;
 }
+
 p {
   margin: 10px 0 0 0;
 }
