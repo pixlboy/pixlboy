@@ -1,22 +1,6 @@
 import "./footer.scss";
-import { useState, useEffect } from "react";
-import { firestore } from "../../firebase/connect";
 
-export default function Footer() {
-  const [tags, setTags] = useState([]);
-  const [updated, setUpdated] = useState(null);
-
-  useEffect(() => {
-    const tagsDoc = firestore.collection("footer").doc("tags");
-    tagsDoc.get().then((doc) => {
-      setTags(doc.data().list);
-    });
-
-    const updatedDoc = firestore.collection("footer").doc("updated");
-    updatedDoc.get().then((doc) => {
-      setUpdated(doc.data().date);
-    });
-  }, []);
+export default function Footer({ tags, updated }) {
 
   return (
     <footer className="app-footer">

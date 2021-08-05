@@ -1,9 +1,9 @@
 import "./header.scss";
 
-export default function Header({ name }) {
+export default function Header({label}) {
   return (
     <header className="app-header">
-      <span className="tab">{name}</span>
+      <span className="tab">{label}</span>
     </header>
   );
 }

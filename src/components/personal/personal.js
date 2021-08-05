@@ -1,22 +1,11 @@
 import "./personal.scss";
 
-export default function Personal({ props }) {
-  
-  const sorter = () => {
-    let sorted = [];
-    for(const key in props){
-      const idx = props[key].order - 1;
-      sorted[idx] = props[key];
-    };
-    return sorted;
-  }
-
-  const sortedData = sorter();
+export default function Personal({ list }) {
 
   return (
     <section className="personal">
       <ul className="list">
-        {sortedData.map((item, i) => (
+        {list.map((item, i) => (
           <li className="clear-all" key={i}>
             <label className={`icon pull-left ${item.class}`}></label>
             <span className="pull-left">{item.label}</span>

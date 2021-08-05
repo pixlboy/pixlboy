@@ -15,6 +15,12 @@ import { useState, useEffect } from "react";
 import { firestore } from "../firebase/connect";
 
 export default function HomePage() {
+  const page = {
+    label: "Resume",
+    name: "Rachit Garg",
+    summary: "Full Stack Engineer",
+  };
+
   const [resume, setResume] = useState(null);
 
   useEffect(() => {
@@ -32,27 +38,27 @@ export default function HomePage() {
     <main className="wrapper">
       {resume && (
         <>
-          <Header name="Resume" />
+          <Header label={page.label} />
           <aside className="left-section pull-left">
             <div className="profile-badge">
               <Animation />
               <div className="profile-image"></div>
-              <h5 className="name">Rachit Garg</h5>
-              <h6 className="title">Full Stack Engineer</h6>
+              <h5 className="name">{page.name}</h5>
+              <h6 className="title">{page.summary}</h6>
             </div>
-            <Intro props={resume.intro} />
-            <Personal props={resume.personal} />
-            <Contact />
+            <Intro {...resume.intro} />
+            <Personal {...resume.personal} />
+            <Contact {...resume.contact} />
           </aside>
           <article className="right-section pull-left">
-            <Experience />
-            {/* <Skills /> */}
-            <Responsibilities />
-            <Highlights />
-            <Interests />
+            <Experience {...resume.experience} />
+            <Skills {...resume.skills} />
+            <Responsibilities {...resume.responsibilities} />
+            <Highlights {...resume.highlights} />
+            <Interests {...resume.interests} />
           </article>
           <div className="clear-all"></div>
-          <Footer />
+          <Footer {...resume.footer} />
         </>
       )}
     </main>

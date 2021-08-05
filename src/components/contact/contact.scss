@@ -1,68 +1,52 @@
 .contact {
-    padding: 20px;
+  padding: 20px;
 
-    .list {
-      li {
-        padding: 8px 5px;
-        overflow: hidden;
-  
-        .icon {
-          width: 24px;
-          height: 24px;
-          margin-right: 12px;
-          &.phone{
-            background: url("../../images/phone.svg") no-repeat 0 0;
-            background-size: 100%;
-          }
-          &.email{
-            background: url("../../images/email.svg") no-repeat 0 0;
-            background-size: 100%;
-          }
-          &.resume{
-            background: url("../../images/download.svg") no-repeat 0 0;
-            background-size: 100%;
-          }
-          &.git{
-            background: url("../../images/github.svg") no-repeat 0 0;
-            background-size: 100%;
-          }
-          &.linkedin{
-            background: url("../../images/linkedin.svg") no-repeat 0 0;
-            background-size: 100%;
-          }
-          &.stack{
-            background: url("../../images/stack.svg") no-repeat 0 0;
-            background-size: 100%;
-          }
-          &.website{
-            background: url("../../images/website.svg") no-repeat 0 0;
-            background-size: 100%;
-          }
+  .list {
+    li {
+      padding: 8px 5px;
+      overflow: hidden;
+
+      .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+        &.phone {
+          background: url("../../images/phone.svg") no-repeat 0 0;
+          background-size: 100%;
         }
-  
-        span {
-          line-height: 1.5rem;
-  
-          a {
-            text-decoration: none;
-            color: var(--color-white);
-          }
+        &.email {
+          background: url("../../images/email.svg") no-repeat 0 0;
+          background-size: 100%;
+        }
+        &.download {
+          background: url("../../images/download.svg") no-repeat 0 0;
+          background-size: 100%;
+        }
+        &.git {
+          background: url("../../images/github.svg") no-repeat 0 0;
+          background-size: 100%;
+        }
+        &.linkedin {
+          background: url("../../images/linkedin.svg") no-repeat 0 0;
+          background-size: 100%;
+        }
+        &.stack {
+          background: url("../../images/stack.svg") no-repeat 0 0;
+          background-size: 100%;
+        }
+        &.website {
+          background: url("../../images/website.svg") no-repeat 0 0;
+          background-size: 100%;
         }
       }
-    }
 
-    .linker {
-        color: transparent !important;
-        width: 250px;
-        position: absolute;
-        z-index: 1;
-        overflow: hidden;
-    }
-
-    .linker-text {
+      .linker {
         position: relative;
-        color: var(--color-white);
         top: 2px;
-        z-index: 0;
+        line-height: 1.5rem;
+        text-decoration: none;
+        color: var(--color-white);
+      }
     }
+  }
 }
