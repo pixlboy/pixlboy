@@ -1,6 +1,6 @@
 /*==========================Media Queries=====================*/
 
-@media screen and (max-device-width: 767px) {
+@media screen and (max-device-width: 800px) {
   html {
     font-size: 14px;
   }
@@ -12,81 +12,11 @@
       height: auto;
     }
 
-    .left-section {
-      .section-header {
-        &:after {
-          width: 80%;
-        }
+    .app-footer {
+      height: 80px !important;
+      .updated {
+        width: 100% !important;
       }
-      .personal-info {
-        .list {
-          li:nth-child(1) {
-            margin-bottom: 0;
-          }
-          li:nth-child(2) {
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-
-    .right-section {
-      .section-header {
-        font-size: 0.7em;
-        height: 30px;
-        margin: 15px auto 0;
-        .heading {
-          margin-left: 15px;
-        }
-        &::after {
-          left: 15px;
-          width: 300px;
-        }
-      }
-      .section-experience-education {
-        .org-list {
-          .org {
-            .datetime {
-              width: 125px;
-              padding: 4px 10px;
-            }
-            .org-img {
-              display: none;
-            }
-            .summary {
-              width: 100%;
-            }
-            .highlights {
-              li {
-                &:before {
-                  top: 5px;
-                }
-              }
-            }
-          }
-        }
-      }
-      .section-skills {
-        .skill-list {
-          strong,
-          ol {
-            float: none;
-          }
-          ol {
-            padding: 5px 0 0 0px;
-          }
-        }
-      }
-      .section-content {
-        padding: 10px 15px;
-      }
-    }
-  }
-  .app-footer {
-    height: 80px !important;
-    margin-top: 20px;
-    .updated {
-      width: 100% !important;
     }
   }
 }

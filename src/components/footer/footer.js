@@ -4,7 +4,7 @@ export default function Footer({ tags, updated }) {
 
   return (
     <footer className="app-footer">
-      <span className="updated pull-left">
+      <span className="updated">
         <strong>UPDATED : </strong>
         <time className="date-time">{updated}</time>
       </span>

@@ -1,32 +1,18 @@
 import "./experience.scss";
-import { useState, useEffect } from "react";
-import { firestore } from "../../firebase/connect";
 
-export default function Experience() {
-  const [list, setList] = useState([]);
-
-  useEffect(() => {
-    const items = [];
-    const collection = firestore.collection("experience").orderBy("order");
-    collection.get().then((data) => {
-      data.forEach((doc) => {
-        items.push(doc.data());
-      });
-      setList(items);
-    });
-  }, []);
+export default function Experience({heading, list}) {
 
   return (
-    <section className="section-experience-education content-box">
+    <section className="section-experience-education">
       <h2 className="section-header">
-        <span className="heading">EXPERIENCE & EDUCATION</span>
+        <span className="heading">{heading}</span>
       </h2>
       <div className="section-content clear-all">
         <ul className="org-list">
           {list.map((item, i) => (
-            <li className="org clear-all" key={i}>
+            <li className="org" key={i}>
               <span className={`org-img ${item.class}`}></span>
-              <div className="summary pull-left">
+              <div className="summary">
                 <h6>
                   {item.label}
                   <time className="datetime">
@@ -40,9 +26,9 @@ export default function Experience() {
                     ))}
                   </ul>
                 </div>
-                <div className="clear-all"></div>
-                <div className="description">{item.desc}</div>
               </div>
+              <div className="clear-all"></div>
+              <div className="description">{item.desc}</div>
             </li>
           ))}
         </ul>

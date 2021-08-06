@@ -3,14 +3,15 @@
   padding: 0 0 10px;
 
   .cover-image {
-    height: 395px;
-    background: url("../images/profile-img-bw.jpg") no-repeat 0 0;
+    height: 375px;
+    background: url("../images/profile-img.jpg") no-repeat 0 0;
     background-size: 100%;
+    filter: grayscale(1);
   }
 
   .profile-image {
     transition: 0.7s;
-    background: url("../images/profile-img-bw.jpg") no-repeat 0 0;
+    background: url("../images/profile-img.jpg") no-repeat 0 0;
     background-size: 100%;
     width: 140px;
     height: 140px;
@@ -22,30 +23,25 @@
     right: 0;
     margin: auto;
     border: 3px solid var(--color-grey-1);
-
-    &:before {
-      content: "";
-      background-image: url("../images/profile-img.jpg");
-    }
+    filter: grayscale(1);
 
     &:hover {
-      background-image: url("../images/profile-img.jpg");
+      filter: grayscale(0);
     }
   }
 
   .name {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 90px 0 10px;
     text-align: center;
-    color: var(--color-white);
 
     &.letter {
-      margin: 10px 0 10px;
+      margin-top: 20px;
     }
   }
 
   .title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     margin: 0 0 10px;
     text-align: center;
     font-weight: 400;

@@ -1,9 +1,8 @@
-import './responsibilities.scss';
+import "./responsibilities.scss";
 
-export default function Responsibilities({heading, list}) {
-
+export default function Responsibilities({ heading, list }) {
   return (
-    <section className="section-responsibilities content-box">
+    <section className="section-responsibilities">
       <h2 className="section-header">
         <span className="heading">{heading}</span>
       </h2>

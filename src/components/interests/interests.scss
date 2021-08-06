@@ -1,26 +1,43 @@
 .section-interests {
- 
   .list {
-
+    display: flex;
+    flex-wrap: wrap;
     li {
-      width: 25%;
-      float: left;
-      text-align: center;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 80px;
       margin: 10px;
-      max-width: 85px;
 
-
-      .name {
-        display: block;
-        font-size: 0.7rem;
-        line-height: 20px;
-      }
-
-      .icons {
-        transition: 0.7s;
-        font-size: 2rem;
-        display: block;
-        font-style: normal;
+      .icon {
+        margin-bottom: 8px;
+        width: 32px;
+        height: 32px;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        &.trading {
+          background-image: url("../../images/trading.svg");
+        }
+        &.hiking {
+          background-image: url("../../images/hiking.svg");
+        }
+        &.meetups {
+          background-image: url("../../images/meetups.svg");
+        }
+        &.music {
+          background-image: url("../../images/music.svg");
+        }
+        &.photography {
+          background-image: url("../../images/photography.svg");
+        }
+        &.reading {
+          background-image: url("../../images/reading.svg");
+        }
+        &.workout {
+          background-image: url("../../images/workout.svg");
+        }
       }
     }
   }

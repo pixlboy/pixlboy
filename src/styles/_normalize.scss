@@ -1,15 +1,16 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: var(--font-size);
 }
+
 body {
   background-color: var(--color-grey-9);
   margin: 0;
   font: 100% var(--font-stack);
   color: var(--color-grey-1);
-  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -22,15 +23,6 @@ a:hover {
   outline: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--color-grey-8);
-}
-
 li,
 ul,
 ol {
@@ -39,16 +31,8 @@ ol {
   list-style-type: none;
 }
 
-code {
-  color: var(--color-grey-1);
-}
-
 ::-ms-clear {
   display: none;
-}
-
-pre {
-  white-space: pre-wrap;
 }
 
 p {

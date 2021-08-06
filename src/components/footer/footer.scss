@@ -2,24 +2,14 @@
     height: var(--header-footer-height);
     background: var(--color-grey-3);
     color: var(--color-white);
-    font-size: .850rem;
-    z-index: 100;
-    position: relative;
+    font-size: .75rem;
+    line-height: 40px;
+    text-align: center;
     .updated{
-        line-height: 40px;
-        text-align: center;
         width: var(--width-left);
+        float: left;
     }
-    .hashtags{
-        line-height: 40px;
-        margin: 0 auto;
-        text-align: center;
-        .hashtag{
-            font-size: .8rem;
-            margin: 0 10px;
-            font-weight: 700;
-            text-decoration: none;
-            cursor: default;
-        }
+    .hashtag{
+        margin: 0 10px;
     }
 }

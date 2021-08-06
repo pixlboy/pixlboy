@@ -39,7 +39,7 @@ export default function HomePage() {
       {resume && (
         <>
           <Header label={page.label} />
-          <aside className="left-section pull-left">
+          <aside className="left-section">
             <div className="profile-badge">
               <Animation />
               <div className="profile-image"></div>
@@ -48,11 +48,11 @@ export default function HomePage() {
             </div>
             <Intro {...resume.intro} />
             <Personal {...resume.personal} />
+            <Skills {...resume.skills} />
             <Contact {...resume.contact} />
           </aside>
-          <article className="right-section pull-left">
+          <article className="right-section">
             <Experience {...resume.experience} />
-            <Skills {...resume.skills} />
             <Responsibilities {...resume.responsibilities} />
             <Highlights {...resume.highlights} />
             <Interests {...resume.interests} />

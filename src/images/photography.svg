@@ -1,0 +1,20 @@
+<svg
+	aria-hidden="true"
+	focusable="false"
+	data-prefix="fad"
+	data-icon="camera-retro"
+	role="img"
+	xmlns="http://www.w3.org/2000/svg"
+	viewBox="0 0 512 512"
+	>
+	<g>
+	  <path
+		d="M256 232a88 88 0 1 0 88 88 88 88 0 0 0-88-88zm0 56a32.09 32.09 0 0 0-32 32 16 16 0 0 1-32 0 64.06 64.06 0 0 1 64-64 16 16 0 0 1 0 32zM480 32H256l-64 48H16A16 16 0 0 0 0 96v64h512V64a32.09 32.09 0 0 0-32-32z"
+		fill="#039be5"
+	  ></path>
+	  <path
+		d="M176 48a16 16 0 0 0-16-16H64a16 16 0 0 0-16 16v32h128zM0 160v272a48 48 0 0 0 48 48h416a48 48 0 0 0 48-48V160zm256 280a120 120 0 1 1 120-120 120 120 0 0 1-120 120z"
+		fill="#01579b"
+	  ></path>
+	</g>
+ </svg>

@@ -3,7 +3,6 @@ import HomePage from "./pages/home";
 import CoverPage from "./pages/cover";
 
 export default function App() {
-
   return (
     <Switch>
       <Route path="/cover" component={CoverPage}></Route>

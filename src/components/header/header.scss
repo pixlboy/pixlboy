@@ -7,13 +7,11 @@
         text-transform: uppercase;
         height: var(--header-footer-height);
         line-height: 45px;
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin: auto;
         display: block;
         width: 80px;
         text-align: center;
-        &.cover{
-            width: 140px;
-        }
+        letter-spacing: .1rem;
     }
 }

@@ -1,5 +1,5 @@
 .personal {
-  padding: 10px 0;
+  padding-bottom: 20px;
 
   .list {
     li {
@@ -7,6 +7,7 @@
       overflow: hidden;
 
       .icon {
+        float: left;
         width: 24px;
         height: 24px;
         background-position: center;

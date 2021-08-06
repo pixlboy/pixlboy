@@ -1,85 +1,74 @@
 .wrapper {
   max-width: var(--width-wrapper);
   margin: 0 auto;
-  background-color: var(--color-white);
   box-shadow: 1px 1px 4px 0 var(--color-grey-2);
+
+  .section-header {
+    position: relative;
+    text-align: center;
+    margin: 0;
+
+    .heading {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.125rem;
+      position: relative;
+      z-index: 100;
+      background: var(--color-white);
+      padding: 0 15px;
+    }
+
+    &::first-letter {
+      font-size: 1.75rem;
+    }
+
+    &::after {
+      content: "";
+      border-top: 2px solid var(--color-grey-10);
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 20px;
+      z-index: 0;
+    }
+  }
+
+  .section-content {
+    font-size: 0.875rem;
+    margin: 25px 0;
+  }
+
   .left-section {
     width: var(--width-left);
     height: var(--body-height);
     color: var(--color-white);
     background: var(--color-grey-1);
+    float: left;
+
     .section-header {
-      font-size: 1.2rem;
-      margin: 15px 0;
-      color: var(--color-white);
-      position: relative;
-      font-weight: 500;
-
-      span {
+      .heading {
         background: var(--color-grey-1);
-        z-index: 100;
-        position: relative;
-        padding-right: 10px;
-      }
-
-      &::first-letter {
-        font-size: 1.4em;
+        font-weight: 500;
       }
 
       &::after {
-        content: "";
-        width: 300px;
-        border-top: 1px solid var(--color-grey-8);
-        font-size: 0;
-        position: absolute;
-        right: 0;
-        top: 20px;
-        z-index: 0;
+        opacity: 0.2;
       }
     }
   }
+
   .right-section {
     width: calc(100% - #{var(--width-left)});
     height: var(--body-height);
-    .section-header {
-      color: var(--color-grey-3);
-      font-size: 1em;
-      margin: 30px auto 20px;
-      height: 40px;
-      letter-spacing: 2px;
-      width: 70%;
-      position: relative;
-      float: left;
-
-      .heading {
-        position: relative;
-        z-index: 100;
-        background: var(--color-white);
-        margin-left: 25px;
-        padding-right: 15px;
-        text-transform: uppercase;
-      }
-
-      &::first-letter {
-        font-size: 2em;
-      }
-
-      &::after {
-        content: "";
-        border-top: 2px solid var(--color-grey-1);
-        width: 75%;
-        font-size: 0;
-        position: absolute;
-        right: 0;
-        top: 26px;
-        z-index: 0;
-      }
-    }
-
-    .section-content {
-      padding: 5px 25px;
-      font-size: 0.9375em;
-    }
-
+    background: var(--color-white);
+    padding: 20px;
+    float: left;
   }
+}
+
+.clear-all {
+  clear: both;
+}
+.v-spacer {
+  height: 1rem;
 }

@@ -1,75 +1,79 @@
 .section-experience-education {
-    .org-list {
-        .org {
-            margin: 0 0 20px;
-            overflow: hidden;
-            width: 100%;
-            .org-img {
-                width: 50px;
-                height: 50px;
-                margin: 0 20px 0 0;
-                border-radius: 50%;
-                padding: 9px;
-                background-color: var(--color-grey-2);
-                color: var(--color-white);
-                float: left;
-                background-size: 70%;
-                background-position: center;
-                background-repeat: no-repeat;
-                &.work{
-                    background-image: url("../../images/briefcase.svg");
-                }
-                &.edu{
-                    background-image: url("../../images/hat.svg");
-                }
-            }
-
-            .summary {
-                width: calc(100% - 90px);
-                h6{
-                    margin: 0 0 10px;
-                    font-size: 1rem;
-                    font-weight: 400;
-                }
-                .datetime{
-                    font-size: .75em;
-                    float: right;
-                    height: 20px;
-                    border-radius: 25px;
-                    background: var(--color-grey-10);
-                    padding: 3px 10px;
-                    width: 140px;
-                    text-align: center;
-                    color:var(--color-black);
-                }
-            }
-            .highlights{
-                font-weight: 700;
-                font-size: 13px;
-                float: left;
-                li{
-                    float: left;
-                    padding-right: 20px;
-                    &:before{
-                        content: "\2022";
-                        color: var(--color-blue-3);
-                        margin: 0 5px 0 0;
-                        font-size: 2rem;
-                        line-height: 0;
-                        top: 7px;
-                        position: relative;
-                    }
-                    &.active{
-                        &:before{
-                            color: var(--color-green-1);
-                        }    
-                    }    
-                }
-            }
-            .description{
-                margin-top: 5px;
-                font-size: .875rem;
-            }
+  .org-list {
+    .org {
+      margin-bottom: 25px;
+      overflow: hidden;
+      width: 100%;
+      .org-img {
+        width: 50px;
+        height: 50px;
+        margin: 0 15px 0 0;
+        background-color: var(--color-grey-2);
+        color: var(--color-white);
+        float: left;
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+        &.work {
+          background-image: url("../../images/briefcase.svg");
         }
+        &.edu {
+          background-image: url("../../images/hat.svg");
+        }
+      }
+
+      .summary {
+        width: calc(100% - 70px);
+        float: left;
+      }
+      
+      h6 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      .datetime {
+        font-size: 0.75rem;
+        float: right;
+        border-radius: 25px;
+        background: var(--color-grey-10);
+        padding: 3px 10px;
+        color: var(--color-black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .highlights {
+        font-weight: 700;
+        font-size: 0.875rem;
+        overflow: hidden;
+        margin: 8px 0 15px;
+        li {
+          float: left;
+          padding-right: 20px;
+          &:before {
+            content: "\2022";
+            color: var(--color-blue-3);
+            margin: 0 5px 0 0;
+            font-size: 2rem;
+            line-height: 0;
+            top: 7px;
+            position: relative;
+          }
+          &.active {
+            &:before {
+              color: var(--color-green-1);
+            }
+          }
+        }
+      }
+
+      .description {
+        line-height: 1.3rem;
+        font-size: 0.875rem;
+      }
     }
+  }
 }

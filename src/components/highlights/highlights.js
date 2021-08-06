@@ -3,7 +3,7 @@ import "./highlights.scss";
 export default function Highlights({ heading, list }) {
 
   return (
-    <section className="section-highlights content-box">
+    <section className="section-highlights">
       <h2 className="section-header">
         <span className="heading">{heading}</span>
       </h2>
