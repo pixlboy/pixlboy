@@ -23,14 +23,12 @@
       }
 
       .summary {
-        width: calc(100% - 70px);
+        width: calc(100% - 65px);
         float: left;
       }
-      
-      h6 {
-        margin: 0;
+
+      .name {
         font-size: 1rem;
-        font-weight: 400;
       }
 
       .datetime {

@@ -1,7 +1,6 @@
 import "./experience.scss";
 
-export default function Experience({heading, list}) {
-
+export default function Experience({ heading, list }) {
   return (
     <section className="section-experience-education">
       <h2 className="section-header">
@@ -13,16 +12,21 @@ export default function Experience({heading, list}) {
             <li className="org" key={i}>
               <span className={`org-img ${item.class}`}></span>
               <div className="summary">
-                <h6>
+                <div className="name">
                   {item.label}
                   <time className="datetime">
                     {item.start} - {item.end}
                   </time>
-                </h6>
+                </div>
                 <div className="highlights">
                   <ul>
                     {item.positions.map((position, i) => (
-                      <li key={i} className={item.end === 'Present' ? 'active' : ''}>{position}</li>
+                      <li
+                        key={i}
+                        className={item.end === "Present" ? "active" : ""}
+                      >
+                        {position}
+                      </li>
                     ))}
                   </ul>
                 </div>

@@ -9,22 +9,15 @@
     overflow: hidden;
     width: 100%;
     height: 20px;
-    line-height: 20px;
+    line-height: 21px;
     background: rgba(173, 173, 173, 0.5);
     .skill-bar {
       float: left;
-      &.frontend {
-        background: var(--color-blue-1);
-      }
-      &.middleware {
-        background: var(--color-blue-2);
-      }
-      &.backend {
-        background: var(--color-blue-3);
-      }
-      &.others {
-        background: var(--color-blue-4);
-      }
+      background: linear-gradient(
+        to right,
+        var(--color-blue-7),
+        var(--color-blue-1)
+      );
     }
   }
   .skill-list {
