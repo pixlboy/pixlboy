@@ -9,7 +9,9 @@ export default function Responsibilities({ heading, list }) {
       <div className="section-content clear-all">
         <ul className="list">
           {list.map((item, i) => (
-            <li key={i}>{item}</li>
+            <li key={i}>
+              <p>{item}</p>
+            </li>
           ))}
         </ul>
       </div>

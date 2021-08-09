@@ -32,7 +32,7 @@ export default function Experience({ heading, list }) {
                 </div>
               </div>
               <div className="clear-all"></div>
-              <div className="description">{item.desc}</div>
+              <p className="description">{item.desc}</p>
             </li>
           ))}
         </ul>

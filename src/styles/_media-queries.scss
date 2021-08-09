@@ -1,15 +1,19 @@
 /*==========================Media Queries=====================*/
 
 @media screen and (max-device-width: 800px) {
-  html {
-    font-size: 14px;
-  }
 
   .wrapper {
     .left-section,
     .right-section {
       width: 100%;
       height: auto;
+    }
+
+    .section-experience-education{
+      .datetime{
+        float: none !important;
+        margin-top: 8px;
+      }
     }
 
     .app-footer {

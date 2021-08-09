@@ -22,15 +22,10 @@
   }
   .skill-list {
     overflow: hidden;
-    font-size: 0.875rem;
     .item {
       float: left;
-      min-width: 30%;
-      margin: 0 8px 5px 0;
-      &:before {
-        content: "|";
-        margin-right: 6px;
-      }
+      min-width: 33%;
+      margin: 0 0 15px 0;
     }
   }
 }
