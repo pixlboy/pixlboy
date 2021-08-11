@@ -1,6 +1,7 @@
 .profile-badge {
   position: relative;
-  padding: 0 0 10px;
+  text-align: center;
+  margin: 0 0 10px;
 
   .cover-image {
     height: 375px;
@@ -33,18 +34,17 @@
   .name {
     font-size: 1.5rem;
     margin: 90px 0 10px;
-    text-align: center;
+  }
 
-    &.letter {
-      margin-top: 20px;
-    }
+  .cover-name {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
   }
 
   .title {
     font-size: 1.25rem;
-    margin: 0 0 10px;
-    text-align: center;
+    margin: 0;
     font-weight: 400;
-    color: var(--color-white);
   }
+
 }

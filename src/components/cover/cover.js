@@ -1,6 +1,7 @@
 import "./cover.scss";
 
 export default function Cover({ heading, list, address }) {
+
   return (
     <section className="section-cover">
       <h2 className="section-header">
@@ -9,7 +10,7 @@ export default function Cover({ heading, list, address }) {
       <div className="section-content clear-all">
         {list.map((item, i) => {
           let elem =
-            i === 4 ? (
+            i === 5 ? (
               <ol key={i}>
                 {Object.keys(item).map((pos, j) => (
                   <li key={j}>{item[pos]}</li>
@@ -21,7 +22,7 @@ export default function Cover({ heading, list, address }) {
           return elem;
         })}
         <address>{address}</address>
-        <div className="v-spacer"></div>
+        <p></p>
         <div className="signature-image"></div>
       </div>
     </section>

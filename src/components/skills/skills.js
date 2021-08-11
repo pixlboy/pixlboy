@@ -18,14 +18,14 @@ export default function Skills({ heading, list, stats }) {
             </span>
           </div>
         ))}
+        <ul className="skill-list">
+          {list.map((tech, i) => (
+            <li key={i} className="item">
+              {tech}
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul className="skill-list">
-        {list.map((tech, i) => (
-          <li key={i} className="item">
-            {tech}
-          </li>
-        ))}
-      </ul>
     </section>
   );
 }

@@ -30,7 +30,7 @@ export default function CoverPage() {
           <aside className="left-section">
             <div className="profile-badge">
               <div className="cover-image"></div>
-              <h5 className="name letter">{page.name}</h5>
+              <h5 className="cover-name">{page.name}</h5>
               <h6 className="title">{page.summary}</h6>
             </div>
             <Contact {...resume.contact} />

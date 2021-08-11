@@ -34,7 +34,7 @@
   }
 
   .section-content {
-    margin: 25px 0;
+    margin: 20px 0;
   }
 
   .left-section {
@@ -61,7 +61,6 @@
     width: calc(100% - #{var(--width-left)});
     height: var(--body-height);
     background: var(--color-white);
-    padding: 20px 20px 0;
     float: left;
     font-size: 0.875rem;
   }
@@ -69,7 +68,4 @@
 
 .clear-all {
   clear: both;
-}
-.v-spacer {
-  height: 1rem;
 }
