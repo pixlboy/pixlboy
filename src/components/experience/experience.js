@@ -20,10 +20,10 @@ export default function Experience({ heading, list }) {
                 </div>
                 <div className="highlights">
                   <ul>
-                    {item.positions.map((position, i) => (
+                    {item.positions.map((position, idx) => (
                       <li
-                        key={i}
-                        className={item.end === "Present" ? "active" : ""}
+                        key={idx}
+                        className={i === 0 && idx === 0 ? "active" : ""}
                       >
                         {position}
                       </li>

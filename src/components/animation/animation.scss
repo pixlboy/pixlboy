@@ -15,21 +15,19 @@
     animation-timing-function: linear;
     animation-direction: forwards;
     animation-iteration-count: infinite;
-    animation-duration: 12s;
     position: absolute;
     top: 0;
-    width: 200px;
     right: 0;
     opacity: 0.5;
 
     &.small {
-      margin: 0 60px 0 0;
+      margin: 0 200px 0 0;
       width: 150px;
       height: auto;
     }
 
     &.smaller {
-      margin: 0 230px 0 0;
+      margin: 0 330px 0 0;
       width: 100px;
       height: auto;
     }
@@ -101,7 +99,7 @@
       &.wing2 {
         animation-timing-function: linear;
         animation-iteration-count: infinite;
-        animation-duration: 5s;
+        animation-duration: 6s;
       }
     }
   }
@@ -109,20 +107,20 @@
 
 @keyframes cloud-movement {
   0% {
-    opacity: 0.3;
+    opacity: 0.2;
     transform: translateX(300px);
   }
 
   10% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 
   90% {
-    opacity: 0.1;
+    opacity: 0.3;
   }
 
   100% {
-    opacity: 0;
+    opacity: 0.2;
   }
 }
 
